@@ -1,0 +1,60 @@
+header {
+    background-color: #F7CA56;
+    height: 3rem;
+    width: 100vw;
+}
+.btns-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 16px;
+    gap: 24px;
+    transform: scale(3);
+}
+.btn {
+    width: 62px;
+    height: 62px;
+    position: relative;
+    border-radius: 18px;
+    padding: 2px;
+    box-shadow: 4px 2px 16px rgba(136, 165, 191, 0.48), -4px -2px 16px #FFFFFF;
+    cursor: pointer;
+    .inner-wrapper {
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+        transition: all .2s ease-in-out;
+        display: grid;
+        place-items: center;
+        i {
+            transition: all .2s ease-in-out;
+            font-size: 1em;
+            position: relative;
+            color: #9E9E9E;
+        }
+    }
+
+}
+.btn.active {
+    .inner-wrapper {
+        box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #FFFFFF;
+        i {
+            color: #F7CA56;
+        }
+    }
+}
+.example-1 {
+    box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #FFFFFF;
+    height: 10rem;
+    width: 10rem;
+    margin-top: -10rem;
+    margin-bottom: 1rem;
+}
+.example-2 {
+    box-shadow: 4px 2px 16px rgba(136, 165, 191, 0.48), -4px -2px 16px #FFFFFF;
+    height: 10rem;
+    width: 10rem;
+    margin-top: -10rem;
+    margin-bottom: 5rem;
+    margin-left: -15rem;
+    border-radius: 80px;
+}

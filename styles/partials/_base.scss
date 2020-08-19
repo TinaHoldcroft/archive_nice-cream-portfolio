@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
 body {
     width: 100%;
     height: 100%;
@@ -11,4 +16,6 @@ body {
     align-items: center;
     overflow-y: scroll;
     overflow-x: hidden;
+    background: linear-gradient(318.32deg, #C3D1E4 0%, #DDE7F3 55%, #D4E0ED 100%);
+    place-items: center;
 }

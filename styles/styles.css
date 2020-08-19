@@ -23,7 +23,7 @@ body {
 }
 
 header {
-  background-color: #F7CA56;
+  background-color: #ffa500;
   height: 3rem;
   width: 100vw;
 }
@@ -64,7 +64,7 @@ header {
   box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #FFFFFF;
 }
 .btn.active .inner-wrapper i {
-  color: #F7CA56;
+  color: #ffa500;
 }
 
 .example-1 {

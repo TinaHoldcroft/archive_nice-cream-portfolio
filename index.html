@@ -10,6 +10,7 @@
 		<!-- style -->
 		<link rel="stylesheet" type="text/css" href="styles/styles.css">
 		<script src="https://kit.fontawesome.com/a83d77d417.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://use.typekit.net/dcd2fwz.css">
 		<!-- browser design -->
 		<link rel="icon" href="styles/images/sandbox.gif" type="image/gif" sizes="16x16"> <!-- Favicon -->
 		<meta name="theme-color" content="#000000"> <!-- color of browser banner on phone -->
@@ -18,33 +19,47 @@
 
     <body>
         <header>
-
+			<nav>
+				<h1>Nice Cream</h1>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+					<li><a href="#">Order</a></li>
+					<li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="nav-links"></ul>
+            </nav>
 		</header>
 		
 		<main id="index">
-
-		<div class="example-1"></div>
-		<div class="example-2"><div class="example-2-1"></div></div>
-
-		<div class="btns-wrapper">
-		  <div class="btn active">
-			<div>
-				<i class="fas fa-play"></i>
+			<img id="images__oranges" src="styles/images/orange.jpg">
+			<img id="images__ice-cream" src="styles/images/ice-cream.png">
+			<div class="index-container">
+				<div>
+					<div class="btns-wrapper">
+						<div class="btn active">
+							  <div>
+								<i class="fas fa-ice-cream"></i>
+							  </div>
+						</div>
+						<div class="btn">
+							  <div>
+								<i class="fas fa-shopping-cart"></i>
+							  </div>
+						</div>
+						<div class="btn">
+							  <div>
+								<i class="fas fa-question"></i>
+							  </div>
+						</div>
+					</div>
+				</div>
 			</div>
-		  </div>
-		  <div class="btn">
-			<div>
-				<i class="fas fa-pause"></i>
-			</div>
-		  </div>
-		  <div class="btn">
-			<div>
-				<i>Text</i>
-			</div>
-		  </div>
-		</div>
-
-
 
 		</main>
 
@@ -53,6 +68,7 @@
 		</footer>
 
 		<!-- JavaScript -->
+		<script src="scripts/navigation.js"></script>
 		<script src="scripts/index.js"></script>
 	</body>	
 </html>

@@ -6,12 +6,24 @@
 }
 
 body {
+  display: flex;
+  flex-flow: column;
   background-color: #D4E0ED;
   width: 100%;
   height: 100%;
-  overflow-y: hidden;
+  overflow-y: scroll;
   overflow-x: hidden;
   font-family: montserrat, sans-serif;
+}
+
+main {
+  padding-left: 8vw;
+  padding-right: 8vw;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  background-color: inherit;
+  width: 100%;
+  z-index: 1;
 }
 
 .txt__white {
@@ -22,29 +34,13 @@ body {
   color: #ffa500;
 }
 
-.index-container {
-  position: absolute;
-  top: 50vh;
-  left: 0vw;
-  margin-left: -15rem;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-items: center;
-  padding: 5rem;
-}
-
 .btns-wrapper {
-  position: absolute;
-  top: 50vh;
-  margin-top: -32rem;
-  left: 50vw;
-  margin-left: -8rem;
+  position: relative;
+  width: 5rem;
   display: grid;
   grid-auto-flow: column;
   gap: 1rem;
   transform: scale(2);
-  background-color: #D4E0ED;
   padding: 1rem;
 }
 
@@ -86,42 +82,93 @@ body {
   background-color: #ffa600;
 }
 
-.index-container {
-  position: absolute;
-  top: 50vh;
-  left: 0vw;
-  margin-left: -15rem;
+.shop-container {
+  position: relative;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-items: center;
-  padding: 5rem;
-}
-.index-container div {
-  flex: 1;
-}
-.index-container img {
-  height: 100vh;
 }
 
 #images__ice-cream {
-  height: 80vh;
-  position: absolute;
-  top: 10vh;
-  left: 10vw;
   filter: drop-shadow(2px 2px 5px #808080);
+  height: 80vh;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
-nav {
-  height: 4.6rem;
-  position: absolute;
-  top: 0;
-  width: 100vw;
+.txt-wrapper {
+  margin: 1rem;
 }
-nav h1 {
-  padding-top: 1.4rem;
-  padding-left: 2rem;
+.txt-wrapper h1, .txt-wrapper p {
+  margin-bottom: 1rem;
+}
+.txt-wrapper p {
+  font-size: 0.8em;
+}
+
+.flavour-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.flavour-wrapper a :hover {
+  opacity: 0.5;
+}
+.flavour-wrapper a :active {
+  border: #ffa500 solid 5px;
+}
+
+.flavour {
+  margin-right: 1.5rem;
+  margin-bottom: 3rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  box-shadow: 4px 2px 16px rgba(136, 165, 191, 0.48), -4px -2px 16px #FFFFFF;
+}
+
+.flavour__vanilla {
+  background-color: #EDDECB;
+}
+
+.flavour__strawberry {
+  background-color: #E37370;
+}
+
+.flavour__chocolate {
+  background-color: #572007;
+}
+
+.logo {
+  position: absolute;
+  z-index: 9;
+  right: 0;
+  top: 0;
   text-transform: uppercase;
+  margin: 1rem;
+  font-size: 1.5em;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  background-color: #aec0d4;
+  top: 0vh;
+  left: 0vw;
+  width: 3rem;
+  height: 100vh;
+  z-index: 9;
+}
+.menu i, .menu h3 {
+  padding: 1em;
+}
+.menu h3 {
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  margin-bottom: 1rem;
+  font-size: 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */

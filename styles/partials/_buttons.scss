@@ -1,25 +1,11 @@
-.index-container {
-    position: absolute;
-    top: 50vh;
-    left: 0vw;
-    margin-left: -15rem;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-items: center;
-    padding: 5rem;
-}
+
 .btns-wrapper {
-    position: absolute;
-    top: 50vh;
-    margin-top: -32rem;
-    left: 50vw;
-    margin-left: -8rem;
+    position: relative;
+    width: 5rem;
     display: grid;
     grid-auto-flow: column;
     gap: 1rem;
     transform: scale(2);
-    background-color: #D4E0ED;
     padding: 1rem;
 }
 .btn {

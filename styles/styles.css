@@ -34,6 +34,23 @@ main {
   color: #ffa500;
 }
 
+::-webkit-scrollbar-thumb {
+  background: #d3d3d3;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bdbdbd;
+}
+
 .btns-wrapper {
   position: relative;
   width: 5rem;
